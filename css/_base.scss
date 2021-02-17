@@ -1,0 +1,20 @@
+// for base level global styling
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-primary;
+  color: $color-gray;
+  font-weight: 400;
+  line-height: 1.6;
+}
