@@ -14,7 +14,13 @@ html {
 body {
   box-sizing: border-box;
   font-family: $font-primary;
+  font-size: 1.4rem;
   color: $color-gray;
   font-weight: 400;
   line-height: 1.6;
+}
+
+*::selection {
+  background-color: $color-primary !important;
+  color: $color-white;
 }

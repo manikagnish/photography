@@ -14,9 +14,55 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
-  color: #e0e0e0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  color: #8d8d8d;
   font-weight: 400;
   line-height: 1.6;
+}
+
+*::-moz-selection {
+  background-color: #f3bc47 !important;
+  color: #fff;
+}
+
+*::selection {
+  background-color: #f3bc47 !important;
+  color: #fff;
+}
+
+.heading-primary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #505050;
+  font-size: 1.6rem;
+}
+
+.heading-primary--main {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #8d8d8d;
+  letter-spacing: 1.2rem;
+}
+
+.heading-primary--sub {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.heading-primary--small {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.heading-primary--smaller {
+  font-size: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #c6c6c6;
 }
 /*# sourceMappingURL=main.css.map */
