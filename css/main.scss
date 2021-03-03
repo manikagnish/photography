@@ -10,16 +10,19 @@
 .form {
   display: flex;
   justify-content: center;
-  height: 50rem;
+  text-align: center;
+  height: 80rem;
   background:white;
   color:$color-heading-primary ;
   font-family:$font-heading ;
   margin-top: 10rem;
+  
+  
 }
 
 
 .submit_form {
-  margin-right: 90rem;
+  
   background: $color-primary;
   color: white;
   text-transform: uppercase;
@@ -31,6 +34,7 @@
   padding: 2rem 3rem;
   
   
+  
   &:hover {
     background: $color-primary-dark;
     
@@ -40,10 +44,12 @@
 
 }
 .field_size{
- 
+
+  margin:2rem;
   width:50rem;
   height:4rem;
 }
+
 
 
 
