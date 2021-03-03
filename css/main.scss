@@ -48,7 +48,26 @@
   margin:2rem;
   width:50rem;
   height:4rem;
+  margin-bottom: 3rem;
+  
+ 
 }
+
+label
+{
+  display: flex;
+  justify-content: left;
+  margin-left: 2rem;
+  margin-bottom: -2rem;
+  font-family:$font-heading;
+  color:$color-heading-primary;
+  font-size: bold;
+
+  
+}
+
+
+
 
 
 

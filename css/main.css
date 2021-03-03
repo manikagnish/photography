@@ -105,5 +105,20 @@ body {
   margin: 2rem;
   width: 50rem;
   height: 4rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 2rem;
+  margin-bottom: -2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #505050;
+  font-size: bold;
 }
 /*# sourceMappingURL=main.css.map */
