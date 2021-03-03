@@ -7,22 +7,20 @@
 @import "./styles/headings";
 @import "./styles/logo";
 
+@import "./components/navigation";
+
 .form {
   display: flex;
   justify-content: center;
   text-align: center;
   height: 80rem;
-  background:white;
-  color:$color-heading-primary ;
-  font-family:$font-heading ;
+  background: white;
+  color: $color-heading-primary;
+  font-family: $font-heading;
   margin-top: 10rem;
-  
-  
 }
 
-
 .submit_form {
-  
   background: $color-primary;
   color: white;
   text-transform: uppercase;
@@ -32,43 +30,26 @@
   justify-content: center;
   border-radius: 3rem;
   padding: 2rem 3rem;
-  
-  
-  
+
   &:hover {
     background: $color-primary-dark;
-    
+
     transition-duration: 0.4s;
   }
-
-
 }
-.field_size{
-
-  margin:2rem;
-  width:50rem;
-  height:4rem;
+.field_size {
+  margin: 2rem;
+  width: 50rem;
+  height: 4rem;
   margin-bottom: 3rem;
-  
- 
 }
 
-label
-{
+label {
   display: flex;
   justify-content: left;
   margin-left: 2rem;
   margin-bottom: -2rem;
-  font-family:$font-heading;
-  color:$color-heading-primary;
+  font-family: $font-heading;
+  color: $color-heading-primary;
   font-size: bold;
-
-  
 }
-
-
-
-
-
-
-
