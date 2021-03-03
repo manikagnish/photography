@@ -7,49 +7,27 @@
 @import "./styles/headings";
 @import "./styles/logo";
 
-.form  {
-    
-    display: flex;
-    justify-content: center;
-    height: 30rem;
-    background:#3B3F45;
-    color:goldenrod !important;
+.form {
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+  background: #3b3f45;
+  color: goldenrod !important;
 }
 
-.submit_form{
-
-    background: black;
-    color: white;
-    width: 15rem;
-    margin-top: 22rem;
-    border: 0;
-    justify-content: center;
-    border-radius: 2rem;
-    padding: 2rem;
-    font-family: $font-heading;
-    &:hover{
-
-        background: white;
-        color: black;
-        transition-duration: 2s;
-        
-    }
-
-    
-        
+.submit_form {
+  background: $color-primary-dark;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 22rem;
+  border: 0;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 2rem;
+  font-family: $font-heading;
+  &:hover {
+    background: $color-primary;
+    transition-duration: 0.4s;
+  }
 }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
