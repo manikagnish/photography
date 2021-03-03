@@ -65,4 +65,37 @@ body {
   font-weight: 400;
   color: #c6c6c6;
 }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30rem;
+  background: #3B3F45;
+  color: goldenrod !important;
+}
+
+.submit_form {
+  background: black;
+  color: white;
+  width: 15rem;
+  margin-top: 22rem;
+  border: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2rem;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.submit_form:hover {
+  background: white;
+  color: black;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
 /*# sourceMappingURL=main.css.map */
