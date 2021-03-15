@@ -1,11 +1,14 @@
 .navigation {
-  @include respond(tab-port-min) {
-    display: none;
-  }
+  position: absolute;
+  top: 0;
+  background-color: rgba($color-white, 0.3);
+  backdrop-filter: blur(1rem);
+  width: 100%;
+  z-index: 999;
 
   .logo {
     text-decoration: none;
-    margin: 3rem 2rem;
+    padding: 2rem 4rem;
     display: block;
   }
 
@@ -25,7 +28,7 @@
     text-align: center;
     cursor: pointer;
 
-    top: 3rem;
+    top: 1.5rem;
     right: 4rem;
   }
 
@@ -42,7 +45,7 @@
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
     //transform: scale(80);
 
-    top: 3rem;
+    top: 1.5rem;
     right: 4rem;
   }
 
