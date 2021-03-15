@@ -13,6 +13,76 @@ $breakpoint arguement choices:
 - big-desktop
 */
 @import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  color: #bbb;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+*::-moz-selection {
+  background-color: #f3bc47 !important;
+  color: #fff;
+}
+
+*::selection {
+  background-color: #f3bc47 !important;
+  color: #fff;
+}
+
+.heading-primary {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #505050;
+  font-size: 1.6rem;
+}
+
+.heading-primary--main {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #bbb;
+  letter-spacing: 1.2rem;
+}
+
+.heading-primary--sub {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.heading-primary--small {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.heading-primary--smaller {
+  font-size: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #c6c6c6;
+}
+
 .navigation {
   position: absolute;
   top: 0;
@@ -25,7 +95,7 @@ $breakpoint arguement choices:
 
 .navigation .logo {
   text-decoration: none;
-  padding: 2rem 4rem;
+  padding: 2rem 6rem;
   display: block;
 }
 
@@ -45,7 +115,7 @@ $breakpoint arguement choices:
   text-align: center;
   cursor: pointer;
   top: 1.5rem;
-  right: 4rem;
+  right: 6rem;
 }
 
 .navigation__background {
@@ -60,7 +130,7 @@ $breakpoint arguement choices:
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1), -webkit-transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   top: 1.5rem;
-  right: 4rem;
+  right: 6rem;
 }
 
 .navigation__nav {
@@ -117,8 +187,8 @@ $breakpoint arguement choices:
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  -webkit-transform: scale(50);
-          transform: scale(50);
+  -webkit-transform: scale(55);
+          transform: scale(55);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
@@ -227,6 +297,15 @@ label {
   font-size: bold;
 }
 
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Ranchers", cursive;
+  letter-spacing: 3px;
+}
+
 .landing {
   height: 100vh;
   /* Fading animation */
@@ -240,6 +319,8 @@ label {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .landing .slideshow-container {
@@ -248,19 +329,17 @@ label {
 }
 
 .landing .text {
-  color: #f2f2f2;
-  font-size: 1.5rem;
-  font-weight: bold;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30%;
   width: 100%;
+  text-align: center;
 }
 
 .landing .dots {
   position: absolute;
   bottom: 10vh;
   left: 50%;
+  right: 50%;
 }
 
 .landing .dot {
@@ -307,84 +386,5 @@ label {
   .landing .text {
     font-size: 1.1rem;
   }
-}
-
-.heading-primary {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #505050;
-  font-size: 1.6rem;
-}
-
-.heading-primary--main {
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #bbb;
-  letter-spacing: 1.2rem;
-}
-
-.heading-primary--sub {
-  font-size: 3.6rem;
-  font-weight: 700;
-}
-
-.heading-primary--small {
-  font-size: 3rem;
-  font-weight: 400;
-}
-
-.heading-primary--smaller {
-  font-size: 1.6rem;
-}
-
-.heading-secondary {
-  font-size: 2.4rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  color: #c6c6c6;
-}
-
-.logo {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "Ranchers", cursive;
-  letter-spacing: 3px;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4rem;
-  color: #bbb;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-*::-moz-selection {
-  background-color: #f3bc47 !important;
-  color: #fff;
-}
-
-*::selection {
-  background-color: #f3bc47 !important;
-  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

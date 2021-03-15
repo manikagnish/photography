@@ -8,7 +8,7 @@
 
   .logo {
     text-decoration: none;
-    padding: 2rem 4rem;
+    padding: 2rem 6rem;
     display: block;
   }
 
@@ -29,7 +29,7 @@
     cursor: pointer;
 
     top: 1.5rem;
-    right: 4rem;
+    right: 6rem;
   }
 
   &__background {
@@ -46,7 +46,7 @@
     //transform: scale(80);
 
     top: 1.5rem;
-    right: 4rem;
+    right: 6rem;
   }
 
   &__nav {
@@ -108,7 +108,7 @@
 
   //FUNCTIONALITY
   &__checkbox:checked ~ &__background {
-    transform: scale(50);
+    transform: scale(55);
   }
   &__checkbox:checked ~ &__nav {
     width: 100%;

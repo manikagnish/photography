@@ -2,12 +2,12 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
+@import "./base/base";
+@import "./base/typography";
+
 @import "./components/navigation";
 @import "./components/form";
+@import "./components/btn";
+@import "./components/logo";
 
 @import "./pages/landing";
-
-@import "./styles/headings";
-@import "./styles/logo";
-
-@import "base";
