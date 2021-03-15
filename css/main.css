@@ -229,11 +229,7 @@ label {
 
 .landing {
   height: 100vh;
-  /* Slideshow container */
-  /* Caption text */
-  /* The dots/bullets/indicators */
   /* Fading animation */
-  /* On smaller screens, decrease text size */
 }
 
 .landing .mySlides {
@@ -309,7 +305,7 @@ label {
 
 @media only screen and (max-width: 300px) {
   .landing .text {
-    font-size: 11px;
+    font-size: 1.1rem;
   }
 }
 
