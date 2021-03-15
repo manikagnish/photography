@@ -1,8 +1,72 @@
-// .square-card {
-// }
+.background {
+  transition: all 0.3s;
+  background-color: $color-primary;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+  &:hover .caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
 
-// .rec-card {
-// }
+.bg-size-square {
+  height: 24rem;
+}
 
-// .team-card {
-// }
+.bg-size-rec {
+  height: 24rem;
+}
+
+.bg-size-team {
+  height: 28;
+}
+
+.card-img {
+  transition: all 0.3s;
+  &:hover {
+    filter: opacity(20%);
+    transform: scale(1.1);
+  }
+}
+
+.img-size-square {
+  height: 24rem;
+  width: 24rem;
+}
+
+.img-size-rec {
+  height: 24rem;
+  width: 38rem;
+}
+
+.img-size-team {
+  height: 28rem;
+  width: 28rem;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  color: $color-white;
+}
+
+/*
+
+.team-card {
+
+}
+
+.blog-card {
+
+}
+
+.gallery-card {
+    
+}
+
+*/

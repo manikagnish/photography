@@ -12,7 +12,7 @@ $breakpoint arguement choices:
 - tab-land
 - big-desktop
 */
-@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
 *,
 *::before,
 *::after {
@@ -147,6 +147,86 @@ body {
           transition-duration: 0.4s;
 }
 
+.background {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #f3bc47;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.background:hover .caption {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bg-size-square {
+  height: 24rem;
+}
+
+.bg-size-rec {
+  height: 24rem;
+}
+
+.bg-size-team {
+  height: 28;
+}
+
+.card-img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-img:hover {
+  -webkit-filter: opacity(20%);
+          filter: opacity(20%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.img-size-square {
+  height: 24rem;
+  width: 24rem;
+}
+
+.img-size-rec {
+  height: 24rem;
+  width: 38rem;
+}
+
+.img-size-team {
+  height: 28rem;
+  width: 28rem;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  opacity: 0;
+  color: #fff;
+}
+
+/*
+
+.team-card {
+
+}
+
+.blog-card {
+
+}
+
+.gallery-card {
+    
+}
+
+*/
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,11 +264,11 @@ label {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Ranchers", cursive;
+  font-family: "Fascinate", cursive;
   letter-spacing: 3px;
 }
 
@@ -223,7 +303,7 @@ label {
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
-  top: 1.5rem;
+  top: 2rem;
   right: 6rem;
 }
 
@@ -238,7 +318,7 @@ label {
   transition: -webkit-transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1), -webkit-transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-  top: 1.5rem;
+  top: 2rem;
   right: 6rem;
 }
 
