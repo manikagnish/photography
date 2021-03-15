@@ -83,13 +83,48 @@ body {
   color: #c6c6c6;
 }
 
+.u-margin-b {
+  margin: 6rem;
+}
+
+.u-margin-m {
+  margin: 4rem;
+}
+
+.u-margin-sm {
+  margin: 2rem;
+}
+
+.u-margin-top {
+  margin-top: 2rem;
+}
+
+.u-margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.u-margin-left {
+  margin-left: 2rem;
+}
+
+.u-margin-right {
+  margin-right: 2rem;
+}
+
 .btn-hollow {
   outline: none;
   border: 1px solid #bbb;
   border-radius: 3rem;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   color: #bbb;
   background-color: transparent;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn-hollow:hover {
+  -webkit-backdrop-filter: brightness(80%);
+          backdrop-filter: brightness(80%);
 }
 
 .btn-filled {

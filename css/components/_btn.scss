@@ -2,9 +2,14 @@
   outline: none;
   border: 1px solid $color-gray;
   border-radius: 3rem;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   color: $color-gray;
   background-color: transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    backdrop-filter: brightness(80%);
+  }
 }
 
 .btn-filled {
