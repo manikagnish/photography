@@ -430,7 +430,6 @@ label {
 
 .landing {
   height: 100vh;
-  /* Fading animation */
 }
 
 .landing .mySlides {
@@ -458,6 +457,10 @@ label {
   text-align: center;
 }
 
+.landing .text h4 {
+  color: #bbb;
+}
+
 .landing .dots {
   position: absolute;
   bottom: 10vh;
@@ -482,9 +485,9 @@ label {
 
 .landing .fade {
   -webkit-animation-name: fade;
+          animation-name: fade;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -502,12 +505,6 @@ label {
   }
   to {
     opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .landing .text {
-    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

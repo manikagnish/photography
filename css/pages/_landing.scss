@@ -23,10 +23,12 @@
     top: 30%;
     width: 100%;
     text-align: center;
+    h4 {
+      color: $color-gray;
+    }
   }
 
   // The dots
-
   .dots {
     position: absolute;
     bottom: 10vh;
@@ -48,21 +50,10 @@
     background-color: $color-gray-dark;
   }
 
-  /* Fading animation */
+  // Fading animation
   .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
   }
 
   @keyframes fade {
@@ -71,12 +62,6 @@
     }
     to {
       opacity: 1;
-    }
-  }
-
-  @media only screen and (max-width: 300px) {
-    .text {
-      font-size: 1.1rem;
     }
   }
 }
