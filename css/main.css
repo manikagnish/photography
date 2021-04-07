@@ -455,6 +455,14 @@ label {
   top: 30%;
   width: 100%;
   text-align: center;
+<<<<<<< Updated upstream
+=======
+  height: 65rem;
+  background: white;
+  color: #505050;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10rem;
+>>>>>>> Stashed changes
 }
 
 .landing .text h4 {
@@ -506,5 +514,10 @@ label {
   to {
     opacity: 1;
   }
+}
+
+.footer {
+  height: 50rem;
+  background: #262626;
 }
 /*# sourceMappingURL=main.css.map */
