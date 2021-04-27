@@ -1,4 +1,23 @@
-let slideIndex = 0;
+"use strict";
+
+//NAVBAR
+const navClose = document.getElementById("navi-toggle");
+const navAbout = document.getElementById("nav-about");
+const navServices = document.getElementById("nav-services");
+const navTeam = document.getElementById("nav-team");
+const navBlogs = document.getElementById("nav-blogs");
+const navMeetings = document.getElementById("nav-meetings");
+
+const navItems = [navAbout, navServices, navTeam, navBlogs, navMeetings];
+
+for (let i in navItems) {
+  navItems[i].addEventListener("click", function () {
+    navClose.checked = false;
+  });
+}
+
+//Carousel
+let slideIndex = 1;
 
 function showSlides() {
   let i;
@@ -16,22 +35,11 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
-
 showSlides();
 
-const navClose = document.getElementById("navi-toggle");
-const navAbout = document.getElementById("nav-about");
-const navServices = document.getElementById("nav-services");
-const navTeam = document.getElementById("nav-team");
-const navBlogs = document.getElementById("nav-blogs");
-const navMeetings = document.getElementById("nav-meetings");
-
-const navItems = [navAbout, navServices, navTeam, navBlogs, navMeetings];
-
-for (let i in navItems) {
-  navItems[i].addEventListener("click", function () {
-    navClose.checked = false;
-  });
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
+
+setTimeout(showSlides, 7000); // Change image every 2 seconds

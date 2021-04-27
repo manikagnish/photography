@@ -501,6 +501,9 @@ label {
 
 .landing {
   height: 100vh;
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
 }
 
 .landing .mySlides {
@@ -518,6 +521,36 @@ label {
 .landing .slideshow-container {
   position: relative;
   margin: auto;
+}
+
+.landing .prev,
+.landing .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.landing .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.landing .prev:hover,
+.landing .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .landing .text {
