@@ -1,5 +1,44 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  border-bottom: 0.3px solid rgba($color-gray-light, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99999;
+
+  .logo {
+    text-decoration: none;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    list-style-type: none;
+    margin-left: 3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-gray-light;
+    font-weight: bold;
+    span {
+      display: none;
+    }
+  }
+}
+
 @include respond(tab-port) {
   .navigation {
+    all: unset;
     position: absolute;
     top: 0;
     // background-color: rgba($color-black, 1);
