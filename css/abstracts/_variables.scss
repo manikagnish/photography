@@ -1,7 +1,10 @@
 // COLOR VARIABLES
+//#F8A339 dark
+//#F8C239 light
+
 $color-primary: #f3bc47;
-$color-primary-dark: darken($color-primary, 10%);
-$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: #f8a339;
+$color-primary-light: #f8c239;
 
 $color-heading-primary: #505050;
 $color-heading-secondary: #c6c6c6;

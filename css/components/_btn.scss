@@ -1,9 +1,11 @@
 .btn-hollow {
   outline: none;
-  border: 1px solid $color-gray-light;
+  border: 2px solid $color-gray-light;
   border-radius: 3rem;
-  padding: 1.5rem 2rem;
+  padding: 1.7rem 2rem;
   color: $color-gray-light;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: transparent;
   transition: all 0.2s ease;
 
