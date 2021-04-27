@@ -1,14 +1,15 @@
 .navigation {
   position: absolute;
   top: 0;
-  background-color: rgba($color-white, 0.3);
-  backdrop-filter: blur(1rem);
+  // background-color: rgba($color-black, 1);
+  backdrop-filter: blur(2rem);
   width: 100%;
   z-index: 999;
+  min-height: 10vh;
 
   .logo {
     text-decoration: none;
-    padding: 2rem 6rem;
+    padding: 1rem 6rem;
     display: block;
   }
 
@@ -28,7 +29,7 @@
     text-align: center;
     cursor: pointer;
 
-    top: 2rem;
+    top: 1rem;
     right: 6rem;
   }
 
@@ -45,7 +46,7 @@
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
     //transform: scale(80);
 
-    top: 2rem;
+    top: 1rem;
     right: 6rem;
   }
 
@@ -118,7 +119,7 @@
   //icon
   &__icon {
     position: relative;
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     margin-left: 0.8rem;
 
     &,

@@ -1,10 +1,9 @@
-var slideIndex = 0;
-showSlides();
+let slideIndex = 0;
 
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -18,4 +17,21 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+
+showSlides();
+
+const navClose = document.getElementById("navi-toggle");
+const navAbout = document.getElementById("nav-about");
+const navServices = document.getElementById("nav-services");
+const navTeam = document.getElementById("nav-team");
+const navBlogs = document.getElementById("nav-blogs");
+const navMeetings = document.getElementById("nav-meetings");
+
+const navItems = [navAbout, navServices, navTeam, navBlogs, navMeetings];
+
+for (let i in navItems) {
+  navItems[i].addEventListener("click", function () {
+    navClose.checked = false;
+  });
 }

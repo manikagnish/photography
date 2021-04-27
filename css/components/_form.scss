@@ -1,5 +1,4 @@
 .form {
-<<<<<<< Updated upstream
   display: flex;
   justify-content: center;
   text-align: center;
@@ -26,49 +25,47 @@ label {
   color: $color-heading-primary;
   font-size: bold;
 }
-=======
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 65rem;
-    background: white;
-    color: $color-heading-primary;
-    font-family: $font-heading;
-    margin-top: 10rem;
+// =======
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+//     height: 65rem;
+//     background: white;
+//     color: $color-heading-primary;
+//     font-family: $font-heading;
+//     margin-top: 10rem;
+//   }
+
+.submit_form {
+  background: $color-primary;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+  border: 0;
+  justify-content: center;
+  border-radius: 3rem;
+  padding: 2rem 3rem;
+
+  &:hover {
+    background: $color-primary-dark;
+
+    transition-duration: 0.4s;
   }
-  
-  .submit_form {
-    background: $color-primary;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 2rem;
-    border: 0;
-    justify-content: center;
-    border-radius: 3rem;
-    padding: 2rem 3rem;
-  
-    &:hover {
-      background: $color-primary-dark;
-  
-      transition-duration: 0.4s;
-    }
-  }
-  .field_size {
-    margin: 2rem;
-    width: 50rem;
-    height: 4rem;
-    margin-bottom: 3rem;
-  }
-  
-  label {
-    display: flex;
-    justify-content: left;
-    margin-left: 2rem;
-    margin-bottom: -2rem;
-    font-family: $font-heading;
-    color: $color-heading-primary;
-    font-size: bold;
-  }
-  
->>>>>>> Stashed changes
+}
+.field_size {
+  margin: 2rem;
+  width: 50rem;
+  height: 4rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  display: flex;
+  justify-content: left;
+  margin-left: 2rem;
+  margin-bottom: -2rem;
+  font-family: $font-heading;
+  color: $color-heading-primary;
+  font-size: bold;
+}

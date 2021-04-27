@@ -261,6 +261,47 @@ label {
   font-size: bold;
 }
 
+.submit_form {
+  background: #f3bc47;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+  border: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3rem;
+  padding: 2rem 3rem;
+}
+
+.submit_form:hover {
+  background: #f0ab17;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.field_size {
+  margin: 2rem;
+  width: 50rem;
+  height: 4rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 2rem;
+  margin-bottom: -2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #505050;
+  font-size: bold;
+}
+
 .logo {
   font-size: 2.5rem;
   color: #fff;
@@ -273,16 +314,16 @@ label {
 .navigation {
   position: absolute;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
   width: 100%;
   z-index: 999;
+  min-height: 10vh;
 }
 
 .navigation .logo {
   text-decoration: none;
-  padding: 2rem 6rem;
+  padding: 1rem 6rem;
   display: block;
 }
 
@@ -301,7 +342,7 @@ label {
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
-  top: 2rem;
+  top: 1rem;
   right: 6rem;
 }
 
@@ -316,7 +357,7 @@ label {
   transition: -webkit-transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1), -webkit-transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
-  top: 2rem;
+  top: 1rem;
   right: 6rem;
 }
 
@@ -385,7 +426,7 @@ label {
 
 .navigation__icon {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1.8rem;
   margin-left: 0.8rem;
 }
 
@@ -455,14 +496,6 @@ label {
   top: 30%;
   width: 100%;
   text-align: center;
-<<<<<<< Updated upstream
-=======
-  height: 65rem;
-  background: white;
-  color: #505050;
-  font-family: "Montserrat", sans-serif;
-  margin-top: 10rem;
->>>>>>> Stashed changes
 }
 
 .landing .text h4 {
@@ -514,6 +547,83 @@ label {
   to {
     opacity: 1;
   }
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 80rem;
+  background: white;
+  color: #505050;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10rem;
+}
+
+.field_size {
+  margin: 2rem;
+  width: 50rem;
+  height: 4rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 2rem;
+  margin-bottom: -2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #505050;
+  font-size: bold;
+}
+
+.submit_form {
+  background: #f3bc47;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+  border: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3rem;
+  padding: 2rem 3rem;
+}
+
+.submit_form:hover {
+  background: #f0ab17;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.field_size {
+  margin: 2rem;
+  width: 50rem;
+  height: 4rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 2rem;
+  margin-bottom: -2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #505050;
+  font-size: bold;
 }
 
 .footer {
