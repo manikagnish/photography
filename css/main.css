@@ -311,17 +311,41 @@ label {
   letter-spacing: 3px;
 }
 
+.navScrolled {
+  background-color: white !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  padding: 1rem 6rem !important;
+}
+
+.navScrolled .logo {
+  color: #000;
+}
+
+.navScrolled .navigation__item:first-of-type a {
+  color: #f3bc47;
+}
+
+.navScrolled .navigation__link {
+  color: #717171;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navScrolled .navigation__link:hover {
+  color: #000;
+}
+
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas: "logo nav cta";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 6rem;
+  padding: 3rem 6rem 1rem 6rem;
   border-bottom: 0.3px solid rgba(242, 242, 242, 0.3);
   position: fixed;
   top: 0;
@@ -330,17 +354,32 @@ label {
 }
 
 .navigation .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
   text-decoration: none;
+  display: inline-block;
 }
 
 .navigation__checkbox {
   display: none;
 }
 
+.navigation__nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: nav;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation__item {
@@ -348,31 +387,59 @@ label {
   margin-left: 3rem;
 }
 
+.navigation__item:nth-of-type(5) a {
+  padding-right: auto;
+}
+
 .navigation__link {
   text-decoration: none;
   color: #f2f2f2;
   font-weight: bold;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navigation__link:hover {
+  color: #fff;
+  -webkit-transform: scale(1.001);
+          transform: scale(1.001);
 }
 
 .navigation__link span {
   display: none;
 }
 
-@media (max-width: 56.25em) {
+.navigation #nav-meetings {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: cta;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #f0ab17;
+  border-radius: 2rem;
+  padding: 1rem;
+  color: #f2f2f2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navigation #nav-meetings:hover {
+  color: #fff;
+}
+
+@media (max-width: 60em) {
   .navigation {
     all: unset;
     position: absolute;
     top: 0;
-    -webkit-backdrop-filter: blur(2rem);
-            backdrop-filter: blur(2rem);
-    width: 100%;
     z-index: 999;
     min-height: 10vh;
+    min-width: 100vw;
   }
   .navigation .logo {
     text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: block;
+    padding: 1.5rem 3rem;
   }
   .navigation__checkbox {
     display: none;
@@ -383,7 +450,7 @@ label {
     width: 4rem;
     border-radius: 50%;
     position: fixed;
-    z-index: 2000;
+    z-index: 9999;
     -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
             box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -417,6 +484,7 @@ label {
     transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
   .navigation__list {
+    all: unset;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -428,6 +496,21 @@ label {
   }
   .navigation__item {
     padding: 1rem;
+  }
+  .navigation__item:first-of-type {
+    display: inline-block;
+  }
+  .navigation__item:first-of-type a {
+    color: #fff !important;
+  }
+  .navigation__item:first-of-type:hover a {
+    color: #f3bc47 !important;
+  }
+  .navigation__item:last-of-type a {
+    margin-left: 0;
+  }
+  .navigation #nav-meetings {
+    display: none;
   }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
@@ -501,9 +584,6 @@ label {
 
 .landing {
   height: 100vh;
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
 }
 
 .landing .mySlides {
@@ -569,7 +649,8 @@ label {
   position: absolute;
   bottom: 10vh;
   left: 50%;
-  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .landing .dot {

@@ -2,13 +2,21 @@
 
 //NAVBAR
 const navClose = document.getElementById("navi-toggle");
+const navHome = document.getElementById("nav-home");
 const navAbout = document.getElementById("nav-about");
 const navServices = document.getElementById("nav-services");
 const navTeam = document.getElementById("nav-team");
 const navBlogs = document.getElementById("nav-blogs");
 const navMeetings = document.getElementById("nav-meetings");
 
-const navItems = [navAbout, navServices, navTeam, navBlogs, navMeetings];
+const navItems = [
+  navHome,
+  navAbout,
+  navServices,
+  navTeam,
+  navBlogs,
+  navMeetings,
+];
 
 for (let i in navItems) {
   navItems[i].addEventListener("click", function () {

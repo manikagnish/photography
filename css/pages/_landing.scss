@@ -16,7 +16,7 @@
     margin: auto;
   }
 
-  /* Next & previous buttons */
+  // Next & previous buttons
   .prev,
   .next {
     cursor: pointer;
@@ -33,13 +33,11 @@
     user-select: none;
   }
 
-  /* Position the "next button" to the right */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
 
-  /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -61,7 +59,7 @@
     position: absolute;
     bottom: 10vh;
     left: 50%;
-    right: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .dot {
