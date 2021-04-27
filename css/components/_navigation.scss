@@ -1,7 +1,8 @@
 .navScrolled {
   background-color: rgb(255, 255, 255) !important;
   transition: background-color 200ms linear;
-  padding: 1rem 6rem !important;
+  padding: 2rem 6rem 0 6rem !important;
+  box-shadow: 0 1px 1px $color-gray-light;
 
   .logo {
     color: $color-black;

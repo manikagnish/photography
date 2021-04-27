@@ -24,6 +24,29 @@ for (let i in navItems) {
   });
 }
 
+const navbar = document.querySelector(".navigation");
+const landing = document.querySelector(".landing");
+
+const landingOptions = {
+  rootMargin: "-80% 0px 0px 0px",
+};
+
+const landingObserver = new IntersectionObserver(function (
+  entries,
+  landingObserver
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      navbar.classList.add("navScrolled");
+    } else {
+      navbar.classList.remove("navScrolled");
+    }
+  });
+},
+landingOptions);
+
+landingObserver.observe(landing);
+
 //Carousel
 let slideIndex = 1;
 
