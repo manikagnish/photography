@@ -7,7 +7,7 @@
   img {
     height: 100vh;
     object-fit: cover;
-    filter: brightness(60%);
+    filter: brightness(50%);
   }
 
   // Slideshow container
@@ -46,7 +46,7 @@
   .text {
     color: $color-gray-light;
     position: absolute;
-    top: 30%;
+    top: 40%;
     width: 100%;
     text-align: center;
     font-size: 1.6rem;
@@ -54,7 +54,7 @@
       color: $color-gray;
     }
     blockquote {
-      padding: 0 20%;
+      padding: 0 24%;
     }
 
     .landing__sub-heading {

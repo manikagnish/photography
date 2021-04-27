@@ -420,9 +420,10 @@ label {
   grid-area: cta;
   -ms-grid-column-align: center;
       justify-self: center;
-  background-color: #f3bc47;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f8a339), to(#f8c239));
+  background-image: linear-gradient(to top, #f8a339, #f8c239);
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: #f2f2f2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -598,8 +599,8 @@ label {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .landing .slideshow-container {
@@ -640,7 +641,7 @@ label {
 .landing .text {
   color: #f2f2f2;
   position: absolute;
-  top: 30%;
+  top: 40%;
   width: 100%;
   text-align: center;
   font-size: 1.6rem;
@@ -651,7 +652,7 @@ label {
 }
 
 .landing .text blockquote {
-  padding: 0 20%;
+  padding: 0 24%;
 }
 
 .landing .text .landing__sub-heading {

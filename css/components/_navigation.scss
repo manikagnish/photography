@@ -87,9 +87,13 @@
   #nav-meetings {
     grid-area: cta;
     justify-self: center;
-    background-color: $color-primary;
+    background-image: linear-gradient(
+      to top,
+      $color-primary-dark,
+      $color-primary-light
+    );
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     color: $color-gray-light;
     transition: all 0.3s;
 
