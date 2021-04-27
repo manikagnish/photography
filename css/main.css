@@ -415,8 +415,8 @@ label {
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  -webkit-transform: scale(55);
-          transform: scale(55);
+  -webkit-transform: scale(200);
+          transform: scale(200);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
