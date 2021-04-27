@@ -20,3 +20,12 @@
   height: 50rem;
   background: #262626;
 }
+
+.pseudo {
+  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

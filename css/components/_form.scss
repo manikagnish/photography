@@ -10,10 +10,18 @@
 }
 
 .field_size {
+  outline: none;
   margin: 2rem;
   width: 50rem;
   height: 4rem;
   margin-bottom: 3rem;
+}
+
+.message-box {
+  margin-bottom: 3rem;
+  width: 500px;
+  height: 177px;
+  outline: none;
 }
 
 label {

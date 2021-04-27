@@ -243,10 +243,18 @@ body {
 }
 
 .field_size {
+  outline: none;
   margin: 2rem;
   width: 50rem;
   height: 4rem;
   margin-bottom: 3rem;
+}
+
+.message-box {
+  margin-bottom: 3rem;
+  width: 500px;
+  height: 177px;
+  outline: none;
 }
 
 label {
@@ -669,6 +677,11 @@ label {
   border-radius: 2rem;
 }
 
+.landing .text a {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
 .landing .dots {
   position: absolute;
   bottom: 10vh;
@@ -733,10 +746,18 @@ label {
 }
 
 .field_size {
+  outline: none;
   margin: 2rem;
   width: 50rem;
   height: 4rem;
   margin-bottom: 3rem;
+}
+
+.message-box {
+  margin-bottom: 3rem;
+  width: 500px;
+  height: 177px;
+  outline: none;
 }
 
 label {
@@ -797,5 +818,20 @@ label {
 .footer {
   height: 50rem;
   background: #262626;
+}
+
+.pseudo {
+  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */
