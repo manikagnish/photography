@@ -12,15 +12,15 @@
 .field_size {
   outline: none;
   margin: 2rem;
-  width: 50rem;
-  height: 4rem;
+  width: 50vw;
+  min-height: 4rem;
   margin-bottom: 3rem;
 }
 
 .message-box {
   margin-bottom: 3rem;
-  width: 500px;
-  height: 177px;
+  min-width: 50vw;
+  min-height: 177px;
   outline: none;
 }
 
@@ -33,16 +33,6 @@ label {
   color: $color-heading-primary;
   font-size: bold;
 }
-// =======
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-//     height: 65rem;
-//     background: white;
-//     color: $color-heading-primary;
-//     font-family: $font-heading;
-//     margin-top: 10rem;
-//   }
 
 .submit_form {
   background: $color-primary;
@@ -60,20 +50,4 @@ label {
 
     transition-duration: 0.4s;
   }
-}
-.field_size {
-  margin: 2rem;
-  width: 50rem;
-  height: 4rem;
-  margin-bottom: 3rem;
-}
-
-label {
-  display: flex;
-  justify-content: left;
-  margin-left: 2rem;
-  margin-bottom: -2rem;
-  font-family: $font-heading;
-  color: $color-heading-primary;
-  font-size: bold;
 }

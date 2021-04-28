@@ -1,5 +1,6 @@
 .landing {
   height: 100vh;
+  overflow: hidden;
 
   .mySlides {
     display: none;
@@ -57,6 +58,13 @@
       padding: 0 24%;
     }
 
+    @include respond(tab-port) {
+      top: 20%;
+
+      blockquote {
+        padding: 0 10%;
+      }
+    }
     .landing__sub-heading {
       display: inline-block;
       font-size: 1.7rem;
@@ -85,6 +93,10 @@
     bottom: 10vh;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   .dot {

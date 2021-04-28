@@ -245,15 +245,15 @@ body {
 .field_size {
   outline: none;
   margin: 2rem;
-  width: 50rem;
-  height: 4rem;
+  width: 50vw;
+  min-height: 4rem;
   margin-bottom: 3rem;
 }
 
 .message-box {
   margin-bottom: 3rem;
-  width: 500px;
-  height: 177px;
+  min-width: 50vw;
+  min-height: 177px;
   outline: none;
 }
 
@@ -291,27 +291,6 @@ label {
           transition-duration: 0.4s;
 }
 
-.field_size {
-  margin: 2rem;
-  width: 50rem;
-  height: 4rem;
-  margin-bottom: 3rem;
-}
-
-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  margin-left: 2rem;
-  margin-bottom: -2rem;
-  font-family: "Montserrat", sans-serif;
-  color: #505050;
-  font-size: bold;
-}
-
 .logo {
   font-size: 2.5rem;
   color: #fff;
@@ -319,33 +298,6 @@ label {
   text-transform: uppercase;
   font-family: "Fascinate", cursive;
   letter-spacing: 3px;
-}
-
-.navScrolled {
-  background-color: white !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  padding: 2rem 6rem 0 6rem !important;
-  -webkit-box-shadow: 0 1px 1px #f2f2f2;
-          box-shadow: 0 1px 1px #f2f2f2;
-}
-
-.navScrolled .logo {
-  color: #000;
-}
-
-.navScrolled .navigation__item:first-of-type a {
-  color: #f3bc47;
-}
-
-.navScrolled .navigation__link {
-  color: #717171;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.navScrolled .navigation__link:hover {
-  color: #000;
 }
 
 .navigation {
@@ -435,10 +387,36 @@ label {
   color: #f2f2f2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .navigation #nav-meetings:hover {
   color: #fff;
+}
+
+@media (min-width: 56.25em) {
+  .navScrolled {
+    background-color: white !important;
+    -webkit-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    padding: 2rem 6rem 0 6rem !important;
+    -webkit-box-shadow: 0 1px 1px #f2f2f2;
+            box-shadow: 0 1px 1px #f2f2f2;
+  }
+  .navScrolled .logo {
+    color: #000;
+  }
+  .navScrolled .navigation__item:first-of-type a {
+    color: #f3bc47;
+  }
+  .navScrolled .navigation__link {
+    color: #717171;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navScrolled .navigation__link:hover {
+    color: #000;
+  }
 }
 
 @media (max-width: 60em) {
@@ -549,8 +527,8 @@ label {
             transform: translateX(1rem);
   }
   .navigation__checkbox:checked ~ .navigation__background {
-    -webkit-transform: scale(200);
-            transform: scale(200);
+    -webkit-transform: scale(100);
+            transform: scale(100);
   }
   .navigation__checkbox:checked ~ .navigation__nav {
     width: 100%;
@@ -597,6 +575,7 @@ label {
 
 .landing {
   height: 100vh;
+  overflow: hidden;
 }
 
 .landing .mySlides {
@@ -663,6 +642,15 @@ label {
   padding: 0 24%;
 }
 
+@media (max-width: 60em) {
+  .landing .text {
+    top: 20%;
+  }
+  .landing .text blockquote {
+    padding: 0 10%;
+  }
+}
+
 .landing .text .landing__sub-heading {
   display: inline-block;
   font-size: 1.7rem;
@@ -688,6 +676,12 @@ label {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 37.5em) {
+  .landing .dots {
+    display: none;
+  }
 }
 
 .landing .dot {
@@ -748,15 +742,15 @@ label {
 .field_size {
   outline: none;
   margin: 2rem;
-  width: 50rem;
-  height: 4rem;
+  width: 50vw;
+  min-height: 4rem;
   margin-bottom: 3rem;
 }
 
 .message-box {
   margin-bottom: 3rem;
-  width: 500px;
-  height: 177px;
+  min-width: 50vw;
+  min-height: 177px;
   outline: none;
 }
 
@@ -792,27 +786,6 @@ label {
   background: #f8a339;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-}
-
-.field_size {
-  margin: 2rem;
-  width: 50rem;
-  height: 4rem;
-  margin-bottom: 3rem;
-}
-
-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  margin-left: 2rem;
-  margin-bottom: -2rem;
-  font-family: "Montserrat", sans-serif;
-  color: #505050;
-  font-size: bold;
 }
 
 .footer {
