@@ -124,9 +124,11 @@
             <a class="btn-hollow u-margin-top">Do Something</a>
           </div>
         </div>
+
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>       
-        </div>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>     
+
+      </div>
         <br>
         
         <div class="dots" style="text-align:center">
@@ -182,35 +184,37 @@
   <div>
     <h1 class="heading-primary ">SEND US A MESSAGE </h1>    
     <h2 class="heading-secondary">REQUEST A MEETING</h2>
-    <div>
-      <label for ="name" ><span style="margin-bottom:-8rem;">NAME</span></label> 
-       <br>
-       <input type="text" name="name" placeholder=" your name" id="name"class="field_size">
-     </div>
-     <div>
-       <label for ="Email" ><span style="margin-bottom:-4rem;">EMAIL</span></label>
-       <br>
-       <input type="text" name="email" placeholder=" your email" id="email"class="field_size">
-     </div>
-     <div>
-       <label for ="message">MESSAGE</label>
-       <br>
-       <textarea class="message-box"> 
-         </textarea>
-    </div>
-    <div>
-      <label for ="project-budget" ><span style="margin-bottom:-4rem;">PROJECT BUDGET</span></label>
-      <br>
-      <select name="project budget" placeholder="your message" id="project budget" class="field_size"  style="color: gray;" >
-        <option value="val1">₹500-1000</option>
-        <option value="val2">₹1000-2000</option>
-        <option value="val3">₹2000-4000</option>
-        <option value="val4">₹4000-5000</option>
-      </select>
-    </div>
-    <div>
-    <button class="btn-filled">Send a request</button>
-    </div>
+    <form action="">
+      <div>
+        <label for ="name" ><span style="margin-bottom:-8rem;">NAME</span></label> 
+         <br>
+         <input required type="text" name="name" placeholder=" your name" id="name"class="field_size">
+       </div>
+       <div>
+         <label for ="Email" ><span style="margin-bottom:-4rem;">EMAIL</span></label>
+         <br>
+         <input required type="email" name="email" placeholder=" your email" id="email"class="field_size">
+       </div>
+       <div>
+         <label for ="message">MESSAGE</label>
+         <br>
+         <textarea class="message-box"> 
+           </textarea>
+      </div>
+      <div>
+        <label for ="project-budget" ><span style="margin-bottom:-4rem;">PROJECT BUDGET</span></label>
+        <br>
+        <select name="project budget" placeholder="your message" id="project budget" class="field_size"  style="color: gray;" required >
+          <option value="val1">₹500-1000</option>
+          <option value="val2">₹1000-2000</option>
+          <option value="val3">₹2000-4000</option>
+          <option value="val4">₹4000-5000</option>
+        </select>
+      </div>
+      <div>
+      <button class="btn-filled">Send a request</button>
+      </div>
+    </form>
   </div>
 </div>
 
