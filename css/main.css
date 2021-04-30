@@ -644,6 +644,7 @@ label {
 
 .landing .prev,
 .landing .next {
+  opacity: 0;
   cursor: pointer;
   position: absolute;
   top: 50%;

@@ -48,11 +48,22 @@ landingOptions);
 landingObserver.observe(landing);
 
 //Carousel
+
 const slider = function () {
   const slides = document.querySelectorAll(".mySlides");
   const btnLeft = document.querySelector(".prev");
   const btnRight = document.querySelector(".next");
   const dotContainer = document.querySelector(".dots");
+
+  window.addEventListener("mousemove", function () {
+    btnLeft.style.opacity = 1;
+    btnRight.style.opacity = 1;
+  });
+
+  window.addEventListener("mouseout", function () {
+    btnLeft.style.opacity = 0;
+    btnRight.style.opacity = 0;
+  });
 
   let curSlide = 0;
   const maxSlide = slides.length;
