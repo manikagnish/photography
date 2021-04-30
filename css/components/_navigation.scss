@@ -172,7 +172,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-55%, -50%);
       list-style: none;
       text-align: center;
       width: 100%;
@@ -207,9 +207,9 @@
       &:link,
       &:visited {
         display: inline-block;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 300;
-        padding: 1rem 2rem;
+        padding: 1rem;
         color: $color-white;
         text-decoration: none;
         text-transform: uppercase;

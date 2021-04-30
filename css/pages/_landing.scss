@@ -31,7 +31,7 @@
 
   .slider__btn {
     border: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.212);
     font-family: inherit;
     color: #333;
     border-radius: 50%;
@@ -39,6 +39,10 @@
     width: 5.5rem;
     font-size: 3.25rem;
     cursor: pointer;
+
+    @include respond(phone) {
+      opacity: 50%;
+    }
   }
 
   .prev,

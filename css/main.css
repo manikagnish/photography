@@ -250,11 +250,23 @@ body {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 37.5em) {
+  .field_size {
+    width: 80vw;
+  }
+}
+
 .message-box {
   margin-bottom: 3rem;
   min-width: 50vw;
   min-height: 177px;
   outline: none;
+}
+
+@media (max-width: 37.5em) {
+  .message-box {
+    width: 80vw;
+  }
 }
 
 label {
@@ -479,8 +491,8 @@ label {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
     list-style: none;
     text-align: center;
     width: 100%;
@@ -505,9 +517,9 @@ label {
   }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
-    padding: 1rem 2rem;
+    padding: 1rem;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -614,7 +626,7 @@ label {
 
 .landing .slider__btn {
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.212);
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -622,6 +634,12 @@ label {
   width: 5.5rem;
   font-size: 3.25rem;
   cursor: pointer;
+}
+
+@media (max-width: 37.5em) {
+  .landing .slider__btn {
+    opacity: 50%;
+  }
 }
 
 .landing .prev,
@@ -782,11 +800,23 @@ label {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 37.5em) {
+  .field_size {
+    width: 80vw;
+  }
+}
+
 .message-box {
   margin-bottom: 3rem;
   min-width: 50vw;
   min-height: 177px;
   outline: none;
+}
+
+@media (max-width: 37.5em) {
+  .message-box {
+    width: 80vw;
+  }
 }
 
 label {
