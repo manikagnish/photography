@@ -140,6 +140,6 @@ const slider = function () {
       activateDot(slide);
     }
   });
+  setInterval(nextSlide, 7000); // Change image every 7 seconds
 };
 slider();
-// setTimeout(showSlides, 7000); // Change image every 2 seconds

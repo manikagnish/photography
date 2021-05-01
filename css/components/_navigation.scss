@@ -4,6 +4,7 @@
   grid-template-areas: "logo nav cta";
   align-items: center;
   padding: 3rem 6rem 1rem 6rem;
+  transition: padding 200ms linear;
   border-bottom: 0.3px solid rgba($color-gray-light, 0.3);
   position: fixed;
   top: 0;
@@ -82,6 +83,7 @@
     background-color: rgb(255, 255, 255) !important;
     transition: background-color 200ms linear;
     padding: 2rem 6rem 0 6rem !important;
+    transition: padding 200ms linear;
     box-shadow: 0 1px 1px $color-gray-light;
 
     .logo {
@@ -208,7 +210,7 @@
       &:visited {
         display: inline-block;
         font-size: 2rem;
-        font-weight: 300;
+        font-weight: bold;
         padding: 1rem;
         color: $color-white;
         text-decoration: none;
