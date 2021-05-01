@@ -1,4 +1,4 @@
-.background {
+.card-background {
   transition: all 0.3s;
   background-color: $color-primary;
   display: inline-block;
@@ -37,7 +37,8 @@
 }
 
 .img-size-rec {
-  height: 24rem;
+  // background-size: cover;
+  min-height: 24rem;
   width: 38rem;
 }
 
@@ -53,6 +54,13 @@
   transform: translate(-50%, 50%);
   opacity: 0;
   color: $color-white;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: $color-gray-dark;
+  background-color: $color-white;
+  padding: 2rem;
+  border-radius: 50%;
+  font-size: 3.5rem;
 }
 
 /*

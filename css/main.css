@@ -147,7 +147,7 @@ body {
           transition-duration: 0.4s;
 }
 
-.background {
+.card-background {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-color: #f3bc47;
@@ -157,7 +157,7 @@ body {
   transition: all 0.3s;
 }
 
-.background:hover .caption {
+.card-background:hover .caption {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -193,7 +193,7 @@ body {
 }
 
 .img-size-rec {
-  height: 24rem;
+  min-height: 24rem;
   width: 38rem;
 }
 
@@ -210,6 +210,14 @@ body {
           transform: translate(-50%, 50%);
   opacity: 0;
   color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #717171;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  font-size: 3.5rem;
 }
 
 /*
