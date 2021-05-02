@@ -165,6 +165,23 @@ body {
           transform: translate(-50%, -50%);
 }
 
+.card-background i {
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+  font-size: 3.5rem;
+  transition: all 0.3s;
+}
+
+.card-background i:hover {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  color: #717171;
+}
+
 .card-img {
   height: inherit;
   -webkit-transition: all 0.3s;
@@ -185,15 +202,6 @@ body {
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   opacity: 0;
-  color: #fff;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  color: #717171;
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 50%;
-  font-size: 3.5rem;
 }
 
 .fa-times-thin:before {
@@ -206,8 +214,8 @@ body {
 }
 
 .team-card {
-  height: 24rem;
-  width: 24rem;
+  height: 28rem;
+  width: 28rem;
   background-size: cover;
 }
 
@@ -219,6 +227,16 @@ body {
 .work-card {
   height: 28rem;
   width: 28rem;
+}
+
+.icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
 .show-modal {
@@ -623,12 +641,12 @@ label {
 }
 
 .blog__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(38rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+  justify-items: center;
+  gap: 2rem;
 }
 
 .landing {
@@ -822,6 +840,18 @@ label {
   to {
     opacity: 1;
   }
+}
+
+.team {
+  background: #f7f7f7;
+}
+
+.team__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
 }
 
 .footer {

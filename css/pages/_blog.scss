@@ -1,8 +1,10 @@
 .blog {
-  background-color: #f7f7f7;
+  background-color: $color-gray-background;
 
   &__container {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    justify-items: center;
+    gap: 2rem;
   }
 }
