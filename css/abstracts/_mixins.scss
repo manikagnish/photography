@@ -22,7 +22,7 @@ $breakpoint arguement choices:
     }
   }
   @if $breakpoint == tab-port {
-    @media (max-width: 60em) {
+    @media (max-width: 65em) {
       @content;
     }
   }

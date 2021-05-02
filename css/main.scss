@@ -15,8 +15,7 @@
 @import "./pages/blog";
 @import "./pages/landing";
 @import "./pages/work";
-
-@import "./components/form";
+@import "./pages/testimonial";
 
 .footer {
   height: 50rem;
@@ -30,6 +29,22 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  padding-top: 10rem;
+  text-align: center;
+
+  .heading {
+    padding-bottom: 5rem;
+    h1 {
+      color: $color-gray-dark;
+    }
+  }
+}
+
+section:not(:first-of-type) {
+  padding: 10rem 0;
 }
 
 .hidden {

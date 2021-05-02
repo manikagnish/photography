@@ -2,11 +2,10 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  height: 80rem;
+  min-height: 80rem;
   background: white;
   color: $color-heading-primary;
   font-family: $font-heading;
-  margin-top: 10rem;
 }
 
 .field_size {

@@ -1,13 +1,5 @@
 .blog {
-  padding-top: 10rem;
-  text-align: center;
-
-  &__heading {
-    padding-bottom: 5rem;
-    h1 {
-      color: $color-gray-dark;
-    }
-  }
+  background-color: #f7f7f7;
 
   &__container {
     display: flex;
