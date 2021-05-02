@@ -66,8 +66,8 @@ body {
 }
 
 .heading-primary--small {
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .heading-primary--smaller {
@@ -221,7 +221,7 @@ body {
 
 .blog-card {
   height: 24rem;
-  width: 38rem;
+  width: 37rem;
 }
 
 .work-card {
@@ -328,6 +328,12 @@ label {
   font-family: "Montserrat", sans-serif;
   color: #505050;
   font-size: bold;
+}
+
+@media (max-width: 37.5em) {
+  label {
+    margin-left: 4rem;
+  }
 }
 
 .submit_form {
@@ -643,10 +649,35 @@ label {
 .blog__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(38rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 2rem;
+  padding: 0 5vw;
+}
+
+.blog__card a {
+  text-decoration: none;
+}
+
+.blog__card h4 {
+  color: #717171;
+  text-align: left;
+  margin: 5px 0;
+  border-bottom: 1px solid #e2e2e2;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.blog__card h4:hover {
+  color: #f3bc47;
+}
+
+.blog__card p {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: left;
+  color: #bbb;
 }
 
 .landing {

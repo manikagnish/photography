@@ -3,8 +3,35 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
     justify-items: center;
-    gap: 2rem;
+    padding: 0 5vw;
+  }
+
+  &__card {
+    a {
+      text-decoration: none;
+    }
+
+    h4 {
+      color: $color-gray-dark;
+      text-align: left;
+      margin: 5px 0;
+      border-bottom: 1px solid #e2e2e2;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    p {
+      cursor: pointer;
+      text-transform: uppercase;
+      text-align: left;
+      color: $color-gray;
+    }
   }
 }
