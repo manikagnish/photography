@@ -649,8 +649,8 @@ label {
 .blog__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (minmax(38rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
   justify-items: center;
   padding: 0 5vw;
 }
