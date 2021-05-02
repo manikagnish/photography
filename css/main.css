@@ -166,6 +166,7 @@ body {
 }
 
 .card-img {
+  height: inherit;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -207,6 +208,7 @@ body {
 .team-card {
   height: 24rem;
   width: 24rem;
+  background-size: cover;
 }
 
 .blog-card {

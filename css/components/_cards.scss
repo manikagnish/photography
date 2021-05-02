@@ -12,6 +12,7 @@
 }
 
 .card-img {
+  height: inherit;
   transition: all 0.3s;
   &:hover {
     filter: opacity(20%);
@@ -47,6 +48,7 @@
 .team-card {
   height: 24rem;
   width: 24rem;
+  background-size: cover;
 }
 
 .blog-card {
