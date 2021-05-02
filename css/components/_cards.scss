@@ -63,6 +63,15 @@
   font-size: 3.5rem;
 }
 
+.fa-times-thin:before {
+  content: "\00d7";
+  font-size: 4rem;
+}
+
+.fa-search-plus-thin:before {
+  content: "\f00e";
+}
+
 /*
 
 .team-card {
@@ -78,3 +87,39 @@
 }
 
 */
+
+// modal
+
+.show-modal {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+
+  &__img {
+    height: 80vh;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 99999;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  cursor: pointer;
+}
