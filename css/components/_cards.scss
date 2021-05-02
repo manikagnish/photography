@@ -11,40 +11,12 @@
   }
 }
 
-.bg-size-square {
-  height: 24rem;
-}
-
-.bg-size-rec {
-  height: 24rem;
-}
-
-.bg-size-team {
-  height: 28;
-}
-
 .card-img {
   transition: all 0.3s;
   &:hover {
     filter: opacity(20%);
     transform: scale(1.1);
   }
-}
-
-.img-size-square {
-  height: 24rem;
-  width: 24rem;
-}
-
-.img-size-rec {
-  // background-size: cover;
-  min-height: 24rem;
-  width: 38rem;
-}
-
-.img-size-team {
-  height: 28rem;
-  width: 28rem;
 }
 
 .caption {
@@ -72,21 +44,20 @@
   content: "\f00e";
 }
 
-/*
-
 .team-card {
-
+  height: 24rem;
+  width: 24rem;
 }
 
 .blog-card {
-
+  height: 24rem;
+  width: 38rem;
 }
 
-.gallery-card {
-    
+.work-card {
+  height: 28rem;
+  width: 28rem;
 }
-
-*/
 
 // modal
 

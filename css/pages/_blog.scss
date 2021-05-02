@@ -1,0 +1,16 @@
+.blog {
+  padding: 10rem 0;
+  text-align: center;
+
+  &__heading {
+    padding-bottom: 5rem;
+    h1 {
+      color: $color-gray-dark;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
