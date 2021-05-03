@@ -149,10 +149,14 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
+let modalImg = document.querySelector(".modal__img");
+let i;
 
 const openModal = function () {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
+  // modalImg.src = `./resources/images/img-${i}.jpg`;
+  // console.log(i);
 };
 
 const closeModal = function () {
@@ -160,8 +164,10 @@ const closeModal = function () {
   overlay.classList.add("hidden");
 };
 
-for (let i = 0; i < btnsOpenModal.length; i++)
+for (i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[i].addEventListener("click", openModal);
+  console.log(i);
+}
 
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
@@ -175,19 +181,21 @@ document.addEventListener("keydown", function (e) {
 });
 
 // for swiper
-var swiper = new Swiper(".swiper-container", {
+let swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
-    rotate: 50,
+    rotate: 20,
     stretch: 0,
-    depth: 100,
+    depth: 200,
     modifier: 1,
     slideShadows: true,
   },
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  loop: true,
+  // autoplay: {
+  //   delay: 700,
+  //   disableOnIntraction: false,
+  // },
 });
