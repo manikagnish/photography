@@ -574,7 +574,7 @@ label {
   }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     padding: 1rem;
     color: #fff;
@@ -919,12 +919,6 @@ label {
   height: 28rem !important;
 }
 
-/*
-  swiper-container 
-  mySwiper
-  swiper-wrapper
-  swiper-slide
-*/
 .team__container {
   display: -ms-grid;
   display: grid;

@@ -194,8 +194,8 @@ let swiper = new Swiper(".mySwiper", {
     slideShadows: true,
   },
   loop: true,
-  // autoplay: {
-  //   delay: 700,
-  //   disableOnIntraction: false,
-  // },
+  autoplay: {
+    delay: 700,
+    disableOnIntraction: false,
+  },
 });
