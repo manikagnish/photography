@@ -195,7 +195,7 @@ let swiper = new Swiper(".mySwiper", {
   },
   loop: true,
   autoplay: {
-    delay: 700,
+    delay: 1700,
     disableOnIntraction: false,
   },
 });
