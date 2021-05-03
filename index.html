@@ -29,6 +29,7 @@
       href="resources/svgs/icon.svg"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Captures</title>
   </head>
   <body>
@@ -141,7 +142,7 @@
 <!---SERVICES-->
 <section class="services pseudo" id="services">
   <h2 class="heading-primary">SERVICES</h2>
-  </section>
+</section>
 
 <!---ABOUT US-->
 <section class="about pseudo" id="about" >
@@ -154,16 +155,25 @@
     <h2 class="heading-primary--smaller">PHOTOGRAPHY</h2>
     <h1 class="heading-primary--sub">OUR LATEST WORK</h1>
   </div>
-  <div class="card-background work-card">
-    <div class="card-img" style="background: url(./resources/images/emn.jpg); background-size: cover;";></div>
-    <i class="fa fa-search-plus-thin fa-2x caption show-modal" aria-hidden="true"></i>  
+
+  <div class="work__card-container">
+    <div class="work__card">
+      <div class="card-background work-card">
+        <div class="card-img" style="background: url(./resources/images/emn.jpg); background-size: cover;";></div>
+        <i class="fa fa-search-plus-thin fa-2x caption show-modal" aria-hidden="true"></i>  
+      </div>
+      <div class="modal hidden">
+        <img class="modal__img" src="resources/images/emn.jpg" alt="" >
+      </div>
+      <div class="overlay hidden">
+          <i class="fa fa-times-thin fa-2x close-modal" aria-hidden="true"></i>
+      </div>
+    </div>
   </div>
-  <div class="modal hidden">
-    <img class="modal__img" src="resources/images/emn.jpg" alt="" >
-  </div>
-  <div class="overlay hidden">
-      <i class="fa fa-times-thin fa-2x close-modal" aria-hidden="true"></i>
-  </div>
+
+  
+
+ 
 </section>
 
 <!---blogs-->
@@ -440,7 +450,7 @@
 </section>
    
 <script src="./app.js"></script>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
 
