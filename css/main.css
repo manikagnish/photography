@@ -642,10 +642,6 @@ label {
   }
 }
 
-.blog {
-  background-color: #f7f7f7;
-}
-
 .blog__container {
   display: -ms-grid;
   display: grid;
@@ -653,6 +649,17 @@ label {
       grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
   justify-items: center;
   padding: 0 5vw;
+}
+
+@media (max-width: 37.5em) {
+  .blog__container {
+    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}
+
+.blog__card {
+  margin-bottom: 2rem;
 }
 
 .blog__card a {
@@ -873,7 +880,17 @@ label {
   }
 }
 
-.team {
+.location {
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.location iframe {
+  min-width: 90vw;
+  min-height: 80vh;
+}
+
+.work {
   background: #f7f7f7;
 }
 

@@ -1,14 +1,16 @@
 .blog {
-  background-color: $color-gray-background;
-
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    @include respond(phone) {
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    }
     justify-items: center;
     padding: 0 5vw;
   }
 
   &__card {
+    margin-bottom: 2rem;
     a {
       text-decoration: none;
     }

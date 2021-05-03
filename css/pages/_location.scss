@@ -1,0 +1,9 @@
+.location {
+  text-align: center;
+  background: $color-gray-background;
+
+  iframe {
+    min-width: 90vw;
+    min-height: 80vh;
+  }
+}
