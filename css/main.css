@@ -929,9 +929,110 @@ label {
   gap: 2rem;
 }
 
+.services {
+  display: block !important;
+  background-color: white !important;
+  text-align: center;
+}
+
+.services ul {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.services li {
+  list-style: none;
+  padding: 30px;
+  margin-left: 20px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.services li h1 {
+  color: black;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.services li:hover {
+  -webkit-box-shadow: 2px 2px 2px 2px gainsboro;
+          box-shadow: 2px 2px 2px 2px gainsboro;
+}
+
+.services li:hover h1 {
+  color: gold;
+}
+
 .footer {
   height: 50rem;
   background: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer h1 {
+  margin-bottom: 20px;
+}
+
+.footer_1 {
+  color: white;
+  margin-left: 80px;
+  width: 400px;
+}
+
+.footer_2 {
+  color: white;
+  margin-left: 30px;
+  width: 300px;
+}
+
+.footer_2 p {
+  margin-bottom: 10px;
+}
+
+.footer_3 {
+  color: white;
+  width: auto;
+}
+
+.footer_3 ul {
+  display: block i !important;
+}
+
+.footer_3 li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer_4 {
+  margin-left: 280px;
+  color: white;
+}
+
+.footer_4 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_4 li {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.footer_4 li:first-child {
+  margin-left: 0px;
+}
+
+.footer_image {
+  height: 80px;
+  width: 80px;
 }
 
 .pseudo {
@@ -968,5 +1069,35 @@ section:not(:first-of-type) {
 
 .hidden {
   display: none;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F9F9F9;
+}
+
+.about_text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 80px;
+  margin-right: 40px;
+}
+
+.about li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.about p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.about_photo {
+  height: 400px;
+  width: 700px;
 }
 /*# sourceMappingURL=main.css.map */
