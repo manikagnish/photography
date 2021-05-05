@@ -1065,18 +1065,18 @@ label {
 }
 
 .services ul {
+  cursor: pointer;
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 140px;
-  margin-right: 140px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  padding: 0 14rem;
 }
 
 .services li {
   list-style: none;
-  padding: 30px;
-  margin-left: 20px;
+  padding: 3rem;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }

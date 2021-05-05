@@ -1,35 +1,28 @@
-.services{
-    display: block !important;
-    background-color: white !important;
-    text-align: center;
+.services {
+  display: block !important;
+  background-color: white !important;
+  text-align: center;
 
-    ul{
-        margin-top: 40px;
-        display: flex;
-        margin-left: 140px;
-        margin-right: 140px;
-    }
-li{
+  ul {
+    cursor: pointer;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    padding: 0 14rem;
+  }
+  li {
     list-style: none;
-    padding: 30px;
-    margin-left: 20px;
+    padding: 3rem;
     transition: all 0.5s ease-in;
-    h1{
-        color:black;
-        transition: all 0.5s ease-in;
-        
+    h1 {
+      color: black;
+      transition: all 0.5s ease-in;
     }
-    &:hover{
-        box-shadow: 2px 2px 2px 2px gainsboro ;
-        h1{
-            color:gold;
-        }
+    &:hover {
+      box-shadow: 2px 2px 2px 2px gainsboro;
+      h1 {
+        color: gold;
+      }
     }
-  
+  }
 }
-
-}
-
-
-
-
