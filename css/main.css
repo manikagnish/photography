@@ -287,6 +287,12 @@ body {
   justify-items: center;
 }
 
+@media (max-width: 37.5em) {
+  .footer {
+    padding: 3rem;
+  }
+}
+
 @media (max-width: 66em) {
   .footer {
     gap: 2rem;
@@ -346,26 +352,20 @@ body {
 }
 
 .footer_4 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 2.7px;
 }
 
 .footer_4 li {
-  margin-bottom: 10px;
-  padding: 0 4px;
   list-style: none;
 }
 
-.footer_4 li:first-child {
-  margin-left: 0px;
-}
-
 .footer_image {
-  height: 7rem;
-  width: 7rem;
+  height: 6rem;
+  width: 6rem;
 }
 
 .form {
@@ -749,7 +749,7 @@ label {
   }
 }
 
-.about_text {
+.about__text {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -767,9 +767,19 @@ label {
   margin-top: 10px;
 }
 
-.about_photo {
-  height: 400px;
+.about__image {
+  text-align: center;
+  width: 100%;
+}
+
+.about__photo {
   width: 700px;
+}
+
+@media (max-width: 37.5em) {
+  .about__photo {
+    width: 95vw;
+  }
 }
 
 .blog__container {
@@ -783,8 +793,13 @@ label {
 
 @media (max-width: 37.5em) {
   .blog__container {
-    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -815,6 +830,15 @@ label {
   text-transform: uppercase;
   text-align: left;
   color: #bbb;
+}
+
+@media (max-width: 37.5em) {
+  .card-background {
+    width: 90vw;
+  }
+  .card-img {
+    width: 90vw;
+  }
 }
 
 .landing {
@@ -1024,16 +1048,16 @@ label {
 .work {
   background: #eee;
   padding-top: 10rem;
-  min-height: 100vh;
+  min-height: 90vh;
   color: #717171;
   position: relative;
 }
 
 .swiper-container {
   width: 90vw;
-  height: 90vh;
-  padding-top: 50px;
-  padding-bottom: 200px;
+  height: 70vh;
+  padding-top: 5rem;
+  padding-bottom: 20rem;
 }
 
 .swiper-slide {
@@ -1071,7 +1095,12 @@ label {
   display: grid;
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  padding: 0 14rem;
+}
+
+@media (min-width: 56.25em) {
+  .services ul {
+    padding: 0 14rem;
+  }
 }
 
 .services li {

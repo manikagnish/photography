@@ -8,7 +8,9 @@
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    padding: 0 14rem;
+    @include respond(tab-port-min) {
+      padding: 0 14rem;
+    }
   }
   li {
     list-style: none;

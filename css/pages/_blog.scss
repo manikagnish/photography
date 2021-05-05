@@ -3,7 +3,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
     @include respond(phone) {
-      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      display: flex;
+      flex-direction: column;
     }
     justify-items: center;
     padding: 0 5vw;
@@ -34,5 +35,14 @@
       text-align: left;
       color: $color-gray;
     }
+  }
+}
+
+@include respond(phone) {
+  .card-background {
+    width: 90vw;
+  }
+  .card-img {
+    width: 90vw;
   }
 }

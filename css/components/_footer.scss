@@ -1,5 +1,8 @@
 .footer {
   padding: 10rem 5rem;
+  @include respond(phone) {
+    padding: 3rem;
+  }
   min-height: 30rem;
   background: #262626;
   display: grid;
@@ -53,21 +56,16 @@
     }
 
     ul {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+      gap: 2.7px;
     }
     li {
-      //   margin-left: 30px;
-      margin-bottom: 10px;
-      padding: 0 4px;
       list-style: none;
-      &:first-child {
-        margin-left: 0px;
-      }
     }
   }
   &_image {
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
   }
 }
