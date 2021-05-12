@@ -5,6 +5,7 @@
   overflow: hidden;
   position: relative;
   transition: all 0.3s;
+  border-radius: 5px;
   &:hover .caption {
     opacity: 1;
     transform: translate(-50%, -50%);
