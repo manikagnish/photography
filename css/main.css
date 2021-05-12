@@ -353,21 +353,21 @@ body {
   }
 }
 
-.footer_4 ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(6rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-  gap: 2.7px;
+.footer_4 .footer-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer_4 li {
-  list-style: none;
-}
-
-.footer_image {
-  height: 6rem;
-  width: 6rem;
+.footer_4 .footer-icon-container i {
+  color: #fff;
+  font-size: 2.5rem;
 }
 
 .form {
