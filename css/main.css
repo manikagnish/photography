@@ -1095,8 +1095,8 @@ label {
   margin-top: 40px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 
 @media (min-width: 56.25em) {
