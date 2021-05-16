@@ -29,12 +29,15 @@
 .card-img {
   height: inherit;
   transition: all 0.3s;
-  width: 100%;
-  height: auto;
   &:hover {
     filter: opacity(20%);
     transform: scale(1.1);
   }
+}
+
+.work-card-img {
+  width: 100%;
+  height: auto;
 }
 
 .caption {
