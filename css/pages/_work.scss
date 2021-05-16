@@ -1,14 +1,14 @@
 .work {
-  background: #eee;
+  background: rgb(0, 0, 0);
   padding-top: 10rem;
-  min-height: 90vh;
+  min-height: fit-content;
   color: $color-gray-dark;
   position: relative;
 }
 
 .swiper-container {
   width: 90vw;
-  height: 70vh;
+  height: 90vh;
   padding-top: 5rem;
   padding-bottom: 20rem;
 }
@@ -16,15 +16,15 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 28rem !important;
-  height: 27.9rem !important;
+  width: 32rem !important;
+  height: 40rem !important;
 
   -webkit-box-reflect: below 1px
     linear-gradient(transparent, transparent, #0006);
 }
 
-.swiper-slide img {
-  display: block;
-  width: 28rem !important;
-  height: 28rem !important;
-}
+// .swiper-slide img {
+//   display: block;
+//   width: 28rem !important;
+//   height: 28rem !important;
+// }

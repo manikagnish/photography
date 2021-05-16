@@ -29,6 +29,8 @@
 .card-img {
   height: inherit;
   transition: all 0.3s;
+  width: 100%;
+  height: auto;
   &:hover {
     filter: opacity(20%);
     transform: scale(1.1);
@@ -65,8 +67,8 @@
 }
 
 .work-card {
-  height: 28rem;
-  width: 28rem;
+  height: 40rem;
+  width: 32rem;
 }
 
 .icon-container {
@@ -89,7 +91,7 @@
   z-index: 999999;
 
   &__img {
-    height: 80vh;
+    height: 90vh;
   }
 }
 
@@ -101,7 +103,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
-  z-index: 99999;
+  z-index: 1;
 }
 
 .close-modal {

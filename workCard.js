@@ -4,13 +4,11 @@ export function workCard() {
   const btnCloseModal = document.querySelector(".close-modal");
   const btnsOpenModal = document.querySelectorAll(".show-modal");
   let modalImg = document.querySelector(".modal__img");
-  let i;
+  // let i = document.querySelector(i);
 
   const openModal = function () {
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
-    // modalImg.src = `./resources/images/img-${i}.jpg`;
-    // console.log(i);
   };
 
   const closeModal = function () {
@@ -18,9 +16,8 @@ export function workCard() {
     overlay.classList.add("hidden");
   };
 
-  for (i = 0; i < btnsOpenModal.length; i++) {
+  for (let i = 0; i < btnsOpenModal.length; i++) {
     btnsOpenModal[i].addEventListener("click", openModal);
-    console.log(i);
   }
 
   btnCloseModal.addEventListener("click", closeModal);

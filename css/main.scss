@@ -21,32 +21,3 @@
 @import "./pages/team";
 @import "./pages/testimonial";
 @import "./pages/services";
-
-.pseudo {
-  background-color: rgba(0, 0, 0, 0.1);
-  min-height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.header {
-  padding-top: 10rem;
-  text-align: center;
-
-  .heading {
-    padding-bottom: 5rem;
-    h1 {
-      color: $color-gray-dark;
-    }
-  }
-}
-
-section:not(:first-of-type) {
-  padding: 10rem 0;
-}
-
-.hidden {
-  display: none;
-}
