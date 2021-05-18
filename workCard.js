@@ -1,24 +1,45 @@
 export function workCard() {
-  const modal = document.querySelector(".modal");
+  const modal = document.querySelector(".modal__img");
   const overlay = document.querySelector(".overlay");
   const btnCloseModal = document.querySelector(".close-modal");
   const btnsOpenModal = document.querySelectorAll(".show-modal");
-  let modalImg = document.querySelector(".modal__img");
-  // let i = document.querySelector(i);
+  const images = [
+    "img-1",
+    "img-2",
+    "img-3",
+    "img-4",
+    "img-5",
+    "img-6",
+    "img-7",
+    "img-8",
+    "img-9",
+  ];
 
-  const openModal = function () {
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-  };
+  // const openModal = function () {};
 
   const closeModal = function () {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
   };
 
-  for (let i = 0; i < btnsOpenModal.length; i++) {
-    btnsOpenModal[i].addEventListener("click", openModal);
+  let imgIndex = 0;
+
+  btnsOpenModal.forEach((item) => {
+    item.addEventListener("click", loadImg);
+  });
+
+  function loadImg() {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+    modal.src = `./resources/images/${images[imgIndex]}.jpg`;
+    console.log(modal);
+    imgIndex++;
   }
+
+  // btnsOpenModal.forEach((item) => {
+  //   console.log(item);
+  //   item.addEventListener("click", loadImg(images[imgIndex]));
+  // });
 
   btnCloseModal.addEventListener("click", closeModal);
   overlay.addEventListener("click", closeModal);

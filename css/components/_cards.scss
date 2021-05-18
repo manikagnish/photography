@@ -59,7 +59,7 @@
 
 .team-card {
   height: 28rem;
-  width: 28rem;
+  width: 28rem !important;
   background-size: cover;
   border-radius: 2rem;
 }
@@ -86,16 +86,13 @@
   cursor: pointer;
 }
 
-.modal {
+.modal__img {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999999;
-
-  &__img {
-    height: 90vh;
-  }
+  height: 90vh;
 }
 
 .overlay {
@@ -106,7 +103,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
-  z-index: 1;
+  z-index: 99999;
 }
 
 .close-modal {
@@ -114,4 +111,5 @@
   top: 1rem;
   right: 4rem;
   cursor: pointer;
+  color: $color-white;
 }

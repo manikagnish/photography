@@ -258,7 +258,7 @@ section:not(:first-of-type) {
 
 .team-card {
   height: 28rem;
-  width: 28rem;
+  width: 28rem !important;
   background-size: cover;
   border-radius: 2rem;
 }
@@ -287,16 +287,13 @@ section:not(:first-of-type) {
   cursor: pointer;
 }
 
-.modal {
+.modal__img {
   position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 999999;
-}
-
-.modal__img {
   height: 90vh;
 }
 
@@ -309,7 +306,7 @@ section:not(:first-of-type) {
   background-color: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  z-index: 1;
+  z-index: 99999;
 }
 
 .close-modal {
@@ -317,6 +314,7 @@ section:not(:first-of-type) {
   top: 1rem;
   right: 4rem;
   cursor: pointer;
+  color: #fff;
 }
 
 .footer {
