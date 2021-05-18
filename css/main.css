@@ -1121,6 +1121,50 @@ label {
   gap: 2rem;
 }
 
+.testimonial {
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+}
+
+.testimonial ul {
+  list-style: none;
+}
+
+.testimonial li {
+  border-top: 0.5px solid gainsboro;
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial h2 {
+  font-weight: 100;
+  color: black;
+}
+
+.testimonial_images {
+  height: 6.25em;
+  width: 8.75em;
+}
+
+.testimonial_tags {
+  width: 25em;
+  margin-left: 2em;
+}
+
+.testimonial_tags h1 {
+  color: black;
+}
+
+.testimonial_reviews {
+  width: 1500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .services {
   display: block !important;
   background-color: white !important;

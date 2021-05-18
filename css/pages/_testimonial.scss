@@ -1,2 +1,38 @@
 .testimonial {
+    height:90vh;
+    display: grid;
+    
+    ul{
+        list-style: none;
+    
+    }
+    
+    li{
+        border-top: 0.5px solid gainsboro;
+        padding: 3em;
+        display: flex;
+    }
+    h2{
+        font-weight: 100;
+        color:black;
+    }
+&_images{
+    height:6.25em;
+    width:8.75em;
 }
+&_tags{
+    width:25em ;
+    margin-left: 2em;
+    h1{
+        color:black;
+    }
+}
+&_reviews{
+    width:1500px;
+    align-items: center;
+}
+
+    
+}
+
+
