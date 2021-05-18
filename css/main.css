@@ -604,7 +604,7 @@ label {
     background-color: white !important;
     -webkit-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
-    padding: 1rem 6rem !important;
+    padding: 1.5rem 6rem !important;
     -webkit-transition: padding 200ms linear;
     transition: padding 200ms linear;
     -webkit-box-shadow: 0 1px 1px #f2f2f2;
