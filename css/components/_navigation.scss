@@ -1,9 +1,10 @@
 .navigation {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 0;
   grid-template-areas: "logo nav cta";
   align-items: center;
-  padding: 3rem 6rem 1rem 6rem;
+  padding: 3rem 6rem;
   transition: padding 200ms linear;
   border-bottom: 0.3px solid rgba($color-gray-light, 0.3);
   position: fixed;
@@ -82,7 +83,7 @@
   .navScrolled {
     background-color: rgb(255, 255, 255) !important;
     transition: background-color 200ms linear;
-    padding: 2rem 6rem 0 6rem !important;
+    padding: 1rem 6rem !important;
     transition: padding 200ms linear;
     box-shadow: 0 1px 1px $color-gray-light;
 
