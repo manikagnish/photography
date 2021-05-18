@@ -1120,7 +1120,25 @@ label {
   display: grid;
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-items: center;
   gap: 2rem;
+}
+
+.team__card {
+  width: 28rem;
+}
+
+.team__card h4 {
+  color: #717171;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 5px;
+}
+
+.team__card h3 {
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+  font-weight: normal;
 }
 
 .testimonial {
