@@ -12,11 +12,15 @@
   }
   li {
     margin-bottom: 10px;
-    list-style: none;
+    list-style:square;
+    text-align: justify;
+    text-transform:capitalize;
   }
+    
   p {
     margin-bottom: 10px;
     margin-top: 10px;
+    text-transform: capitalize;
   }
   &__image {
     text-align: center;
