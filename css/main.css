@@ -1257,6 +1257,10 @@ label {
   transition: all 0.5s ease-in;
 }
 
+.services li p {
+  text-transform: capitalize;
+}
+
 .services li:hover {
   -webkit-box-shadow: 2px 2px 2px 2px gainsboro;
           box-shadow: 2px 2px 2px 2px gainsboro;
