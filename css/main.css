@@ -1243,15 +1243,35 @@ label {
           align-items: center;
 }
 
-.services {
-  display: block !important;
-  background-color: white !important;
-  text-align: center;
+.services__card-heading {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.services__card-heading-icon i {
+  font-size: 7rem;
+  color: #f2f2f2;
+}
+
+.services__card-heading-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.services__card-heading-text h2 {
+  background-color: #fff;
+  line-height: 100%;
+  color: #717171;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  font-size: 1.6rem;
 }
 
 .services ul {
   cursor: pointer;
-  margin-top: 40px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
@@ -1271,13 +1291,6 @@ label {
   transition: all 0.5s ease-in;
 }
 
-.services li h1 {
-  color: #000;
-  margin-bottom: 1.5rem;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-}
-
 .services li p {
   text-transform: capitalize;
 }
@@ -1287,7 +1300,7 @@ label {
           box-shadow: 2px 2px 2px 2px gainsboro;
 }
 
-.services li:hover h1 {
-  color: gold;
+.services li:hover h2 {
+  color: #f3bc47;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,32 @@
 .services {
-  display: block !important;
-  background-color: white !important;
-  text-align: center;
+  &__card-heading {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  &__card-heading-icon {
+    i {
+      font-size: 7rem;
+      color: $color-gray-light;
+    }
+  }
+
+  &__card-heading-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    h2 {
+      background-color: $color-white;
+      line-height: 100%;
+      color: $color-gray-dark;
+      transition: all 0.5s ease-in;
+      font-size: 1.6rem;
+    }
+  }
 
   ul {
     cursor: pointer;
-    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     @include respond(tab-port-min) {
@@ -16,18 +37,14 @@
     list-style: none;
     padding: 5rem 3rem;
     transition: all 0.5s ease-in;
-    h1 {
-      color: $color-black;
-      margin-bottom: 1.5rem;
-      transition: all 0.5s ease-in;
-    }
+
     p {
       text-transform: capitalize;
     }
     &:hover {
       box-shadow: 2px 2px 2px 2px gainsboro;
-      h1 {
-        color: gold;
+      h2 {
+        color: $color-primary;
       }
     }
   }
