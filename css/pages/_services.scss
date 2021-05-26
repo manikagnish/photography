@@ -14,13 +14,14 @@
   }
   li {
     list-style: none;
-    padding: 3rem;
+    padding: 5rem 3rem;
     transition: all 0.5s ease-in;
     h1 {
-      color: black;
+      color: $color-black;
+      margin-bottom: 1.5rem;
       transition: all 0.5s ease-in;
     }
-    p{
+    p {
       text-transform: capitalize;
     }
     &:hover {
