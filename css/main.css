@@ -792,7 +792,7 @@ label {
   text-align: left;
   padding: 4rem 2rem;
   width: 50%;
-  padding: 10rem 10rem;
+  padding: 10rem;
 }
 
 @media (max-width: 66em) {
@@ -804,6 +804,7 @@ label {
 @media (max-width: 37.5em) {
   .about__text {
     text-align: center;
+    padding: 10rem 5rem;
   }
 }
 
@@ -818,6 +819,8 @@ label {
   .about ul {
     display: inline-block;
     margin: 0 auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -855,7 +858,7 @@ label {
 }
 
 .about__photo {
-  background-image: url(../../resources/images/about.jpg);
+  background-image: url(/resources/images/about.jpg);
   height: 100%;
   background-position: center;
   background-size: cover;

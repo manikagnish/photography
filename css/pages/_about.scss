@@ -8,12 +8,13 @@
     text-align: left;
     padding: 4rem 2rem;
     width: 50%;
-    padding: 10rem 10rem;
+    padding: 10rem;
     @include respond(tab-port) {
       width: 100%;
     }
     @include respond(phone) {
       text-align: center;
+      padding: 10rem 5rem;
     }
   }
 
@@ -24,6 +25,7 @@
     @include respond(phone) {
       display: inline-block;
       margin: 0 auto;
+      transform: translateX(0);
     }
   }
 
@@ -54,7 +56,7 @@
   }
 
   &__photo {
-    background-image: url(../../resources/images/about.jpg);
+    background-image: url(/resources/images/about.jpg);
     height: 100%;
     background-position: center;
     background-size: cover;
