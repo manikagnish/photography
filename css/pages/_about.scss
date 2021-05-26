@@ -1,36 +1,53 @@
 .about {
+  padding: 0 !important;
   display: flex;
-  @include respond(tab-port) {
-    flex-wrap: wrap;
-  }
   background-color: #f9f9f9;
+  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.2);
 
   &__text {
-    width: fit-content;
-    margin-left: 80px;
-    margin-right: 40px;
+    text-align: left;
+    padding: 4rem 2rem;
+    width: 50%;
+    padding: 10rem 10rem;
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
+
+  ul {
+    margin: 2rem 0;
+    transform: translateX(1.5rem);
+    @include respond(tab-port) {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+
   li {
-    margin-bottom: 10px;
-    list-style:square;
+    list-style: square;
     text-align: justify;
-    text-transform:capitalize;
+    text-transform: capitalize;
+    font-size: 1.2rem;
   }
-    
+
   p {
     margin-bottom: 10px;
     margin-top: 10px;
     text-transform: capitalize;
   }
-  &__image {
-    text-align: center;
-    width: 100%;
-  }
-  &__photo {
-    width: 700px;
 
-    @include respond(phone) {
-      width: 95vw;
+  &__img {
+    @include respond(tab-port) {
+      display: none;
     }
+    width: 50%;
+  }
+
+  &__photo {
+    background-image: url(../../resources/images/about.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
 }
