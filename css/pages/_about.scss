@@ -11,24 +11,33 @@
     padding: 10rem 10rem;
     @include respond(tab-port) {
       width: 100%;
+    }
+    @include respond(phone) {
       text-align: center;
     }
   }
 
   ul {
     margin: 2rem 0;
+    list-style-type: none;
     transform: translateX(1.5rem);
-    @include respond(tab-port) {
+    @include respond(phone) {
       display: inline-block;
       margin: 0 auto;
     }
   }
 
   li {
-    list-style: square;
+    display: flex;
+    align-items: baseline;
     text-align: justify;
     text-transform: capitalize;
     font-size: 1.2rem;
+
+    i {
+      margin-right: 10px;
+      color: $color-primary;
+    }
   }
 
   p {

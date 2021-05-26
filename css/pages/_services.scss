@@ -1,4 +1,5 @@
 .services {
+  padding: 10rem 1rem !important;
   &__card-heading {
     position: relative;
     margin-bottom: 2rem;
@@ -27,14 +28,14 @@
 
   ul {
     cursor: pointer;
+    list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
     @include respond(tab-port-min) {
       padding: 0 14rem;
     }
   }
   li {
-    list-style: none;
     padding: 5rem 3rem;
     transition: all 0.5s ease-in;
 
