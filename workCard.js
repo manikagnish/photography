@@ -22,31 +22,18 @@ export function workCard() {
     overlay.classList.add("hidden");
   };
 
-  let imgIndex = 0;
-
-  btnsOpenModal.forEach((item) => {
-    item.addEventListener("click", loadImg);
-  });
-
-  function loadImg() {
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-    modal.src = `./resources/images/${images[imgIndex]}.jpg`;
-    console.log(modal);
-    imgIndex++;
+  for (let i = 0; i < btnsOpenModal.length; i++) {
+    btnsOpenModal[i].addEventListener("click", () => {
+      modal.classList.remove("hidden");
+      overlay.classList.remove("hidden");
+      modal.src = `./resources/images/${images[i]}.jpg`;
+    });
   }
-
-  // btnsOpenModal.forEach((item) => {
-  //   console.log(item);
-  //   item.addEventListener("click", loadImg(images[imgIndex]));
-  // });
 
   btnCloseModal.addEventListener("click", closeModal);
   overlay.addEventListener("click", closeModal);
 
   document.addEventListener("keydown", function (e) {
-    // console.log(e.key);
-
     if (e.key === "Escape" && !modal.classList.contains("hidden")) {
       closeModal();
     }
