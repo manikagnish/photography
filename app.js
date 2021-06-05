@@ -11,3 +11,8 @@ carousel();
 
 // WORK CARD
 workCard();
+
+function ValidateEmail(event, inputText) {
+  event.preventDefault();
+  //remaining function logic goes here
+}

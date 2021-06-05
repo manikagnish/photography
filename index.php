@@ -1,3 +1,42 @@
+<?php
+$insert = false;
+if(isset($_POST['name'])){
+    // Set connection variables
+    $server = "localhost";
+    $username = "root";
+    $password = "";
+
+    // Create a database connection
+    $con = mysqli_connect($server, $username, $password);
+
+    // Check for connection success
+    if(!$con){
+        die("connection to this database failed due to" . mysqli_connect_error());
+    }
+
+    // Collect post variables
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $budget = $_POST['budget'];
+
+    $sql = "INSERT INTO `photography`.`form` (`name`, `email`, `message`, `budget`, `datetime`) VALUES ('$name', '$email', '$message', '$budget', current_timestamp());";
+    // echo $sql;
+
+    // Execute the query
+    if($con->query($sql) == true){
+        // Flag for successful insertion
+        $insert = true;
+    }
+    else{
+      echo "ERROR: $sql <br> $con->error";
+    }
+
+    // Close the database connection
+    $con->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -143,8 +182,8 @@
   <div class="heading ">
   <h2 class="heading-primary--smaller">SERVICES</h2>
   <h1 class="heading-primary--sub">OUR SKILLS AND TECHNIQUES</h1>
-</div>
-<div>
+  </div>
+  <div>
   <ul>
     <li class="skills">
       <div class="services__card-heading">
@@ -217,9 +256,8 @@
       <p>we are easy to hire and we provide an hassle-free work environment</p>
     </li>
   </ul>
-</div>
-
-  </section>
+  </div>
+</section>
 
 <!---ABOUT US-->
 <section class="about header" id="about" >
@@ -227,39 +265,39 @@
     <div class="heading">
   <h2 class="heading-primary--smaller">ABOUT US</h2>
   <h1 class="heading-primary--sub" >MASTERPICE IN MAKING</h1>
-</div>
-<p>At capture , our main aim is to make your prestigious events not just a memory but a feeling , a feeling that you can watch again and again , for that we have a professional team to cover the events and make sure every small detail of the event is covered. </p>
-<ul>
-  <li>
-    <i class="fas fa-camera-retro"></i>
-    <p>
-      we work for making your event stand out
-    </p>
-  </li>
-  <li><i class="fas fa-camera-retro"></i>
-    <p>
-      we make sure that even the small laughs are covered
-    </p>
-  </li>
-  <li>
-    <i class="fas fa-camera-retro"></i>
-    <p>
-      providing you a proper capture kit for the event covered
-    </p>
-  </li>
-  <li>
-    <i class="fas fa-camera-retro"></i>
-    <p>
-      also to make you smile when you see your event in future through our work 
-    </p>
-  </li>
-</ul>
-  
-</div>
+    </div>
+    <p>At capture , our main aim is to make your prestigious events not just a memory but a feeling , a feeling that you can watch again and again , for that we have a professional team to cover the events and make sure every small detail of the event is covered. </p>
+    <ul>
+    <li>
+        <i class="fas fa-camera-retro"></i>
+        <p>
+        we work for making your event stand out
+        </p>
+    </li>
+    <li><i class="fas fa-camera-retro"></i>
+        <p>
+        we make sure that even the small laughs are covered
+        </p>
+    </li>
+    <li>
+        <i class="fas fa-camera-retro"></i>
+        <p>
+        providing you a proper capture kit for the event covered
+        </p>
+    </li>
+    <li>
+        <i class="fas fa-camera-retro"></i>
+        <p>
+        also to make you smile when you see your event in future through our work 
+        </p>
+    </li>
+    </ul>
+    
+    </div>
 
-<div class="about__img">
-  <div class="about__photo"></div>
-</div>
+    <div class="about__img">
+    <div class="about__photo"></div>
+    </div>
 
 </section>
 
@@ -485,9 +523,7 @@
             </p>
           </div>
         </li>
-</ul>
-  
-
+    </ul>
 </section>
 
 <!---OUR TEAM-->
@@ -526,7 +562,7 @@
       <h3 class="heading-primary--small">PHOTOGRAPHER</h3>
 
       <!-- summary -->
-      <p>Nam ut lectus et purus suscipit ultricies. Nam vulputate lobortis odio ac egestas. Cras ornare.</p>
+      <p>Nam ut lectus et purus suscipit ultricies. Nam vulputate lobortis odio ac..</p>
     </div>
 
     <div class="team__card">
@@ -587,7 +623,7 @@
       <h3 class="heading-primary--small">MANAGER</h3>
       
       <!-- summary -->
-      <p>Nam ut lectus et purus suscipit ultricies. Nam vulputate lobortis odio ac egestas. Cras ornare, augue.</p>
+      <p>Nam ut lectus et purus suscipit ultricies. Nam vulputate lobortis odio ac ege.</p>
  
     </div>
 
@@ -618,7 +654,7 @@
       <h3 class="heading-primary--small">PHOTOGRAPHER</h3>
       
       <!-- summary -->
-      <p>Nam ut lectus et purus suscipit ultricies. Nam vulputate lobortis odio ac egestas. Cras ornare.</p>
+      <p>Nam ut lectus et purus suscipit ultricies. Nam vulputate lobortis. </p>
  
     </div>
     
@@ -640,42 +676,51 @@
   <div>
     <h1 class="heading-primary--smaller ">SEND US A MESSAGE </h1>    
     <h2 class="heading-primary--sub">REQUEST A MEETING</h2>
-    <form action="">
+    <?php
+        if($insert == true){
+        echo "<p style='color:green;'>Thanks for submitting your form.</p>";
+        }
+    ?>
+    <form  method="post" name="formcontact1">
       <div>
         <label for ="name" ><span style="margin-bottom:-8rem;">NAME</span></label> 
          <br>
          <input required type="text" name="name" placeholder=" your name" id="name"class="field_size">
        </div>
        <div>
-         <label for ="Email" ><span style="margin-bottom:-4rem;">EMAIL</span></label>
+         <label for ="email" ><span style="margin-bottom:-4rem;">EMAIL</span></label>
          <br>
          <input required type="email" name="email" placeholder=" your email" id="email"class="field_size">
        </div>
        <div>
-         <label for ="message">MESSAGE</label>
-         <br>
-         <textarea class="message-box"> 
-           </textarea>
-      </div>
-      <div>
-        <label for ="project-budget" ><span style="margin-bottom:-4rem;">PROJECT BUDGET</span></label>
-        <br>
-        <select name="project budget" placeholder="your message" id="project budget" class="field_size"  style="color: gray;" required >
-          <option value="val1">₹1000-5000</option>
-          <option value="val2">₹5000-10000</option>
-          <option value="val3">₹10000-50000</option>
-          <option value="val4">₹50000+</option>
+       <label for ="message"  style="margin-bottom: 2px;">MESSAGE</label>
+       <textarea required name="message" id="message" cols="30" rows="10" class="message-box"></textarea>
+       </div>
+     <div>
+      <label for ="budget" ><span>BUDGET</span></label>
+      <select name="budget" id="budget" class="field_size"  style="color: gray;" required >
+          <option value="">--Select--</option>
+          <option value="base">₹1000-5000</option>
+          <option value="medium">₹5000-10000</option>
+          <option value="high">₹10000-50000</option>
+          <option value="highest">₹50000+</option>
         </select>
-      </div>
-      <div>
-      <button class="btn-filled">Send a request</button>
-      </div>
+     </div>
+
+     <input
+          type="submit"
+          name="submit"
+          value="Submit"
+          class="btn-filled"
+          onclick="ValidateEmail(document.formcontact1.email)"
+      />
+     
     </form>
   </div>
 </section>
 
 <!---FOOTER-->
-<div class="footer">
+<footer class="footer">
   
     <div class="footer_1">
       <h1 >ABOUT US</h1>
@@ -715,7 +760,7 @@
       </div>
 
     </div>
-</div>
+</footer>
 
 </body>
 </html>
